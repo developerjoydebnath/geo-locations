@@ -16,10 +16,6 @@ app.use(bodyParser.json());
 // routes
 app.use('/api/v1', router);
 
-app.get('/', (req, res) => {
-    return res.status(200).json({ message: 'hello world' });
-});
-
 // database connection
 db();
 
